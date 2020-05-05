@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         // создаем и устанавливаем адаптер рекурсера
         adapter = new DataAdapter(this, task);
         recyclerView.setAdapter(adapter);
-        //используем fab для кнопки создания нового уведомления
+        //используем fab для кнопки создания нового таска
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
