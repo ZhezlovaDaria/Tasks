@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_clean"
+        android:icon="@android:drawable/ic_menu_day"
+        android:orderInCategory="100"
+        android:title="Очистить всё"
+        android:onClick="clearAll"/>
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@android:drawable/ic_menu_save"
+        android:orderInCategory="100"
+        android:title="Сортировать по дате"
+        android:onClick="dateSort"/>
+    <item
+        android:id="@+id/action_color"
+        android:orderInCategory="100"
+        android:title="Выделить цветом по приоритету"
+        android:onClick="colorSort" />
+    <item
+        android:id="@+id/action_leave"
+        android:orderInCategory="100"
+        android:title="Выход"
+        android:onClick="Exit"/>
+
+</menu>

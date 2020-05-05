@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                tools:text="Название задчи" />
+
+            <TextView
+                android:id="@+id/dandt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Дата" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_menu_edit"
+            tools:srcCompat="@android:drawable/ic_menu_edit"
+            android:onClick="editItem"
+            />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_delete"
+            tools:srcCompat="@android:drawable/ic_delete"
+            android:onClick="removeSingleItem"/>
+
+    </LinearLayout>
+
+</LinearLayout>
